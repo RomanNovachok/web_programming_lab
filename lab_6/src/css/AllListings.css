@@ -1,0 +1,22 @@
+.section {
+    display: none;
+    padding: 20px;
+}
+
+
+.section.active {
+    display: block;
+}
+
+.section.active h2{
+    margin-left: 8%;
+}
+
+#sortButton {
+    margin-left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
