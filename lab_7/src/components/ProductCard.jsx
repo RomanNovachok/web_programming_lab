@@ -4,9 +4,11 @@ function ProductCard({ image, name, description,price }) {
     return (
         <div className="ProductCard">
             <img alt="imag" src={image} />
-            <p>{name}</p>
-            <p>{description}</p>
-            <p>{price}</p>
+            <div className="Text">
+                <p id="Name">{name}</p>
+                <p>{description}</p>
+                <p><b>Price:</b> {price} грн</p>
+            </div>
         </div>
     );
 }

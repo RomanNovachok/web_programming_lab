@@ -6,7 +6,7 @@ export function Catalog() {
     return(
         <div className="Catalog" >
        
-       {data.map((item, index) => (
+        {data.map((item, index) => (
             <div className="" key={index}>
                 <ProductCard
                     image={item.image}
@@ -15,8 +15,8 @@ export function Catalog() {
                     price={item.price}
                 />
             </div>
-       ))}
-   
+        ))}
+
         </div>
 )
 }
