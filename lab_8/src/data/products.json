@@ -1,0 +1,39 @@
+[
+    {
+      "id": "1",
+      "image": "/images/skiing1.jpg",
+      "name": "\"Faction\" Skis",
+      "description": "Skis for real pro",
+      "price": "400",
+      "status": "Not rented",
+      "type": "skis"
+    },
+    {
+      "id": "2",
+      "image": "/images/White-Snowboard-With-Bindings.jpg",
+      "name": "\"Easy riders\" Snowboard",
+      "description": "The best snowboard",
+      "price": "500",
+      "status": "Not rented",
+      "type": "snowboard"
+    },
+    {
+      "id": "3",
+      "image": "/images/gloves.jpg",
+      "name": "\"CMP MAN\" Gloves",
+      "description": "Very stylish gloves",
+      "price": "200",
+      "status": "Not rented",
+      "type": "gloves"
+    },
+    {
+      "id": "4",
+      "image": "/images/skis_stick.webp",
+      "name": "Skis sticks",
+      "description": "Comfortable sticks",
+      "price": "300",
+      "status": "Not rented",
+      "type": "skis_stick"
+    }
+  ]
+  
