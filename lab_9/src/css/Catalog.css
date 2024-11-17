@@ -1,0 +1,62 @@
+a{
+    text-decoration: none;
+    margin-left: 6%;
+}
+
+.Catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 4% 7%;
+    padding-left: 3.5%;
+}
+
+.Filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 75px;
+    border-bottom: 1px solid black;
+}
+  
+.Filters label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.Filters button{
+    border: none;
+    border-radius: 10px;
+    width: 90px;
+    font-size: 14px;
+    background-color: #d7d7d7;
+
+}
+
+.Filters button:hover {
+    background-color: rgb(171, 170, 170);
+    transition: 0.5s;
+}
+
+.Filters input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+/* spinner.css */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  

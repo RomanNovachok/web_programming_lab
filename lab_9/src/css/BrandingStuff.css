@@ -1,0 +1,22 @@
+.BrandingStuff{
+    display: flex;
+    padding: 15px 30px;
+    height: 150px;
+    border-top: 1.5px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BrandingStuff img{
+    height: 65px;
+}
+
+#Logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.LeftTextArea{
+    width: 250px;
+}

@@ -1,0 +1,48 @@
+/* Загальний стиль для контейнера EquipmentCard */
+.ProductCard {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 300px;
+    margin: 0 0px 55px;
+    margin-left: 6%;
+    padding: 15px 0;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: #f9f9f9; /* Світлий фон для контрасту */
+}
+
+/* Стиль для зображення */
+.ProductCard img {
+    height: 275px;
+    width: auto;
+    object-fit: contain;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Додає закруглені кути */
+}
+
+/* Стиль для назви елемента */
+.ProductCard #Name {
+    color: rgb(61, 61, 61);
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.Text p{
+    color: rgb(78, 77, 77);
+    font-size: 22px;
+    line-height: 28px;
+}

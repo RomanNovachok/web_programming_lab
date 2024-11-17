@@ -5,7 +5,7 @@
       "name": "\"Faction\" Skis",
       "description": "Skis for real pro",
       "price": "400",
-      "status": "Not rented",
+      "is_rented": "false",
       "type": "skis"
     },
     {
@@ -14,7 +14,7 @@
       "name": "\"Easy riders\" Snowboard",
       "description": "The best snowboard",
       "price": "500",
-      "status": "Not rented",
+      "is_rented": "false",
       "type": "snowboard"
     },
     {
@@ -23,7 +23,7 @@
       "name": "\"CMP MAN\" Gloves",
       "description": "Very stylish gloves",
       "price": "200",
-      "status": "Not rented",
+      "is_rented": "false",
       "type": "gloves"
     },
     {
@@ -32,7 +32,7 @@
       "name": "Skis sticks",
       "description": "Comfortable sticks",
       "price": "300",
-      "status": "Not rented",
+      "is_rented": "false",
       "type": "skis_stick"
     }
   ]

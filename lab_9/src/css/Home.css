@@ -1,0 +1,66 @@
+.FirstArea img{
+    margin: 75px;
+    height: 325px;
+    width: 325px;
+}
+
+.FirstArea{
+    display: flex;
+    flex-direction: row;
+}
+
+.RightArea{
+    margin-top: 75px;
+}
+
+.RightArea h1{
+    color:rgb(74, 74, 74);
+    font-size: 36px;
+}
+
+.RightArea p{
+    color:rgb(107, 107, 107);
+    font-size: 24px;
+    margin-top: 15px;
+    width: 500px;
+}
+
+.SecondArea{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SecondArea h1{
+    color:rgb(86, 86, 86);
+    font-size: 56px;
+    margin:0 auto 40px;
+}
+
+.SecondArea button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #d7d7d7;
+    color: rgb(61, 61, 61);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 26px;
+    height: 50px;
+    width: 175px;
+}
+
+.SecondArea a:hover {
+    background-color: rgb(171, 170, 170);
+    transition: 0.5s;
+}
+
+.showMoreP{
+    font-size: 24px;
+    padding: 50px 7% 0;
+}
