@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Skiings",
+        "image": "/images/skiing1.jpg"
+    },
+    {
+        "name": "Snowboards",
+        "image": "/images/snowboard1.jpg"
+    },
+    {
+        "name": "And many others",
+        "image": "./images/other_equipment.png"
+    }
+]
