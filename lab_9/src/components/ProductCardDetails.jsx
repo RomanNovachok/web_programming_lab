@@ -1,7 +1,9 @@
-import "../css/ProductCardDetails.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux"; // Для відправки дій
+import { addItemToCart } from "../redux/actions"; // Дія для додавання у кошик
 import { fetchProductDetails } from "../api/productsApi";
+import "../css/ProductCardDetails.css";
 
 export function ProductCardDetails() {
   const { productId } = useParams();
@@ -10,9 +12,16 @@ export function ProductCardDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const dispatch = useDispatch(); // Ініціалізуємо диспетчер Redux
+
   const showMessage = () => {
     setMessage("Equipment successfully added to cart!");
     setTimeout(() => setMessage(null), 3000);
+  };
+
+  const handleAddToCart = () => {
+    dispatch(addItemToCart(product)); // Відправляємо товар у кошик через Redux
+    showMessage(); // Викликаємо повідомлення
   };
 
   useEffect(() => {
@@ -52,7 +61,7 @@ export function ProductCardDetails() {
           <p>Category: {product.type}</p>
           <p>{product.description}</p>
           <p>Price: {product.price} грн</p>
-          <button onClick={showMessage}>Add to cart</button>
+          <button onClick={handleAddToCart}>Add to cart</button>
         </div>
       </div>
     </div>
