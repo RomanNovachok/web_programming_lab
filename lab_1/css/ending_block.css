@@ -1,0 +1,31 @@
+.ending_block{
+    display: flex;
+    flex-direction: row;
+}
+
+.ending_block_text_area{
+    display: flex;
+    flex-direction: column;
+}
+
+.ending_block_headliner{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ending_block_text{
+    color: rgba(115, 115, 141, 1);
+}
+
+.start_free_trial_button{
+    margin-right: 5%;
+    font-size: 20px;
+    color: white;
+    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 30px;
+    height: 45px;
+    line-height: 45px;
+    background-color:rgba(38, 194, 150, 1);
+}

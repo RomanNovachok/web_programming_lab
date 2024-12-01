@@ -1,0 +1,142 @@
+.Hero_section {
+    height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.Hero_text_area {
+    display: flex;
+    flex-direction: column;
+    color: rgba(115, 115, 141, 1);
+    margin-right: 100px;
+}
+
+.Hero_text_area_span1 {
+    font-weight: 700;
+    font-size: calc(40px + 0.3vw);
+    color: black;
+    margin-bottom: 20px;
+}
+
+.Hero_text_area_span2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.email_and_button {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 25px;
+}
+
+.email_input {
+    padding-left: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    border: 0;
+}
+
+.email_input::placeholder {
+    font-size: 16px;
+    color: rgba(115, 115, 141, 0.6);
+}
+
+.Hero_section_try_fot_free_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 200px;
+    height: 100%;
+    border: 0;
+    background-color: rgba(25, 67, 239, 1);
+    color: white;
+}
+
+.phone_img {
+    height: 450px;
+    margin-right: 5%;
+}
+
+
+@media (max-width: 785px){
+    .Hero_text_area {
+        margin-right: 30px;
+    }
+    
+    .Hero_text_area h1{
+        font-size: 32px;
+    }
+
+    .phone_img {
+        height: 425px;
+    }
+    
+
+    .email_and_button {
+        height: 40px;
+    }
+    
+    .email_input {
+        padding-left: 20px;
+        height: 40px;
+    }
+    
+    
+    .Hero_section_try_fot_free_button {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .email_input::placeholder {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .phone_img {
+        height: 350px;
+    }
+
+    .Hero_section {
+        height: 375px;
+    }
+
+    .Hero_text_area_span1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .Hero_text_area h1{
+        font-size: 28px;
+    }
+
+    .Hero_text_area_span2 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .email_and_button {
+        height: 35px;
+    }
+    
+    .email_input {
+        padding-left: 10px;
+        height: 40px;
+    }
+    
+    
+    .Hero_section_try_fot_free_button {
+        font-size: 12px;
+        width: 125px;
+    }
+
+    .email_input::placeholder {
+        font-size: 12px;
+    }
+    
+}

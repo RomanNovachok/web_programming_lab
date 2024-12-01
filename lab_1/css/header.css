@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 35px;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+header a {
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    color: rgba(115, 115, 141, 1);
+}
+
+.Relationz {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 75px;
+}
+
+.Login {
+    margin-right: 195px;
+}
+
+.Try_it_for_free {
+    color: rgba(25, 67, 239, 1);
+    font-weight: 600;
+    height: 40px;
+    width: 140px;
+    border: 1.5px solid rgba(25, 67, 239, 1);
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

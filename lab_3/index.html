@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оренда гірськолижного спорядження</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header>
+        <div class="left">Ski equipment rental</div>
+        <div class="center">
+            <input type="text" id="searchBar" placeholder="Пошук спорядження..." oninput="filterListings()">
+        </div>
+        <div class="right">
+            <button onclick="showSection('equipment')">Все обладнання</button>
+            <button onclick="showSection('rented')">Орендоване обладнання</button>
+            <button onclick="showSection('createListing')">Створити оголошення</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <div id="equipment" class="section active">
+            <h2>Все обладнання 
+                <button id="sortButton" onclick="sortListingsByPrice()">Сортувати за ціною</button>
+            </h2>
+            <div id="allListings"></div> <!-- Тут будуть оголошення -->
+        </div>
+
+        <div id="rented" class="section">
+            <h2>Орендоване обладнання</h2>
+            <p>Загальна сума оренди: <span id="totalRentPrice">0</span> грн</p>
+            <div id="rentedListings"></div> <!-- Тут будуть орендовані оголошення -->
+        </div>
+
+        <div id="createListing" class="section">
+            <h2>Створити оголошення</h2>
+            <form id="listingForm">
+                <input type="text" id="itemName" placeholder="Назва спорядження" required>
+                <input type="text" id="itemDescription" placeholder="Опис" required>
+                <input type="number" id="itemPrice" placeholder="Ціна" required min="1">
+                <input type="file" id="itemImage" accept="image/*" required>
+                <button type="submit">Додати оголошення</button>
+            </form>
+        </div>
+
+                <!-- Modal for editing listings -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Редагувати оголошення</h2>
+                <form id="editForm">
+                    <input type="text" id="editItemName" placeholder="Назва спорядження" required>
+                    <input type="text" id="editItemDescription" placeholder="Опис" required>
+                    <input type="number" id="editItemPrice" placeholder="Ціна" required>
+                    <input type="file" id="editItemImage" accept="image/*">
+                    <button type="submit">Зберегти зміни</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+.second_info_block{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 130px;
+}
+
+.second_info_block_left_area{
+    width: 55%;
+    color: rgba(115, 115, 141, 1);
+}
+
+.second_info_block_right_area{
+    width: 100%;
+    margin-left: 40px;
+    padding-left: 20px;
+    border-radius: 15px;
+    background-color:rgb(255, 255, 255);
+}
+
+.second_info_block_main_text{
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding-right: 5%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.person4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+.person4 h2{
+    color: black;
+    margin: 0;
+}
+
+.person4 img{
+    height: 45px;
+    margin-right: 10px;
+}
+
+.person4_info{
+    margin-bottom: 25px;
+}
+
+.person4_info img{
+    height: 16px;
+}

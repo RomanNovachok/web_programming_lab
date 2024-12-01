@@ -1,0 +1,203 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav ul li {
+    margin-right: 35px;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+header a {
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    color: rgba(115, 115, 141, 1);
+}
+
+.Relationz {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Login_li{
+    padding-right: 185px;
+    padding-left: 45px;
+}
+
+.Pricing_li{
+    padding-right: 45px;
+}
+
+.Try_it_for_free {
+    color: rgba(25, 67, 239, 1);
+    font-weight: 600;
+    height: 40px;
+    width: 140px;
+    border: 1.5px solid rgba(25, 67, 239, 1);
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1120px){
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    .Pricing_li{
+        padding-right: 35px;
+    }
+
+    .Login_li{
+        padding-right: 155px;
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 950px){
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    .Pricing_li{
+        padding-right: 15px;
+    }
+
+    .Login_li{
+        padding-right: 85px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 850px){
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    .Pricing_li{
+        padding-right: 15px;
+    }
+
+    .Login_li{
+        padding-right: 45px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:785px){
+    nav ul li:last-child {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .Login_li{
+        margin:15px 0;
+        padding: 0;
+    }
+
+    .Pricing_li{
+        padding-right: 0;
+    }
+
+    nav ul li:last-child {
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 12.5px;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -12.5px;
+    }
+}
+
+@media (max-width: 550px){
+    header {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,115 @@
+@import url(../css/header.css);
+@import url(../css/ending_block.css);
+@import url(../css/first_info_block.css);
+@import url(../css/footer.css);
+@import url(../css/hero_section.css);
+@import url(../css/second_info_block.css);
+@import url(../css/third_info_block.css);
+
+* {
+    font-family: 'Gilroy', sans-serif;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin: 0;
+    position: relative;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+}
+
+.relations_icon{
+    width: 100%;
+}
+
+.relations_icon img{
+    margin-left: 55%;
+    height: 35px;
+    width: 35px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(228, 247, 242, 1);
+
+}
+
+
+.update_icon{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.update_icon img{
+    border-radius: 100%;
+    height: 50px;
+    width: 48px;
+    padding: 10px;
+    background-color: rgba(228, 247, 242, 1);
+    transition: transform 0.3s;
+}
+
+.update_icon img:hover{
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+
+@media (max-width: 1030px){
+    body{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media (max-width: 785px){
+    body{
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .update_icon img{
+        height: 30px;
+        width: 30px;
+        padding: 15px;
+    }
+
+    
+    .relations_icon img{
+        height: 30px;
+        width: 30px;
+        padding: 12px;
+    }
+}
+
+@media (max-width:550px){
+    .update_icon img{
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+
+    .update_icon{
+        margin-bottom: 10px;
+    }
+
+    .relations_icon img{
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+}
