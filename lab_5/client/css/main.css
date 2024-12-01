@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left {
+    font-size: 1.5em;
+}
+
+header .center input {
+    padding: 5px;
+    font-size: 1em;
+    width: 300px;
+}
+
+header .right button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+header .right button:hover {
+    background-color: #777;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.section.active {
+    display: block;
+}
+
+.section.active h2{
+    margin-left: 8%;
+}
+
+
+
+#listingsContainer, #rentedListings, #allListings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listing,
+.product-item {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 150px;
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listing img,
+.product-item img {
+    height: 125px;
+    margin-right: 15px; /* Додаємо відступ між зображенням та текстом */
+}
+
+.listing button,
+.product-item button {
+    background-color: #28a745; /* Кнопка для редагування */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #218838; /* Підсвічування кнопки */
+}
+
+#sortButton {
+    margin-left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#sortButton:hover {
+    background-color: #0056b3;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
