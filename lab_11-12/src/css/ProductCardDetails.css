@@ -1,0 +1,74 @@
+.message-about-add-to-cart {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.message-about-add-to-cart p {
+    padding: 5px 10px;
+    font-size: 25px;
+    color: rgb(100, 100, 100, 0.3);
+    background-color: rgb(215, 215, 215, 0.7);
+    border-radius: 5px;
+}
+
+.ProductCardDetails {
+    display: flex;
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.ProductCardDetails img {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.ProductCardDetails h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ProductCardDetails p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-card-details-image {
+    border: 1px solid black;
+    width: 40%;
+}
+
+.product-card-details-right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 40px;
+    width: 60%;
+}
+
+.product-card-details-right-area h1 {
+    font-size: 38px;
+}
+
+.product-card-details-right-area p {
+    line-height: 38px;
+    font-size: 28px;
+}
+
+.product-card-details-right-area button {
+    font-size: 22px;
+    background-color: #d7d7d7;
+    color: rgb(61, 61, 61);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.product-card-details-right-area button:hover {
+    background-color: rgb(171, 170, 170);
+    transition: 0.5s;
+}

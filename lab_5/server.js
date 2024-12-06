@@ -24,6 +24,8 @@ app.use("/api", productRouter);
 let start = async () => {
     await mongoose.connect("mongodb+srv://romanihorovuch:NCpEwi6lVyUkZIdW@cluster0.dhxs3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
+    
+
     console.log("DB connected :)")
 
     app.listen(PORT, () => {

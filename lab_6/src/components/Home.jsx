@@ -8,7 +8,6 @@ import "../css/Home.css"
 export function Home() {
     return(
         <>
-
         <div className="FirstArea">
             <img src={skiEuipment} alt="ski equipment" />
             <div className="RightArea">
@@ -20,14 +19,10 @@ export function Home() {
                 your winter adventures."</p>
             </div>
         </div>
-
         <div className="SecondArea">
             <EquimpmentExamples/>
-
-            <button onClick={() => {}}>Catalog</button>
-            
-        </div>        
-        
+            <button onClick={() => {}}>Catalog</button>            
+        </div>                
         <div className="BrandingStuff">
             <div className="LeftTextArea">
                 <h1>Branding stuff</h1>

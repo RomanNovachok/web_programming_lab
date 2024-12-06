@@ -1,0 +1,54 @@
+header {
+    border-bottom: 1.5px solid gray;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+header a {
+    text-decoration: none;
+    background-color: #d7d7d7;
+    color: rgb(61, 61, 61);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+header a:hover {
+    background-color: rgb(171, 170, 170);
+    transition: 0.5s;
+}
+
+.auth-button {
+    background-color: #d7d7d7;
+    color: rgb(61, 61, 61);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.auth-button:hover {
+    background-color: rgb(171, 170, 170);
+    transition: 0.5s;
+}

@@ -1,0 +1,126 @@
+.cart-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.cart-item-controls button:hover {
+    background-color: #0056b3;
+}
+
+.cart-item-quantity {
+    text-align: center;
+    width: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+.cart-item-price {
+    width: 125px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-buttons a {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-buttons a.back {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cart-buttons a.back:hover {
+    background-color: #5a6268;
+}
+
+.cart-buttons a.continue {
+    background-color: #28a745; /* Основний зелений колір */
+    color: white; /* Білий текст */
+    text-decoration: none; /* Забираємо підкреслення */
+    display: inline-block; /* Для коректного відображення як кнопка */
+    text-align: center; /* Центруємо текст */
+    padding: 10px 20px; /* Відступи всередині */
+    font-size: 16px; /* Розмір шрифту */
+    border-radius: 4px; /* Закруглені краї */
+    transition: background-color 0.3s, transform 0.2s; /* Анімація для ефекту */
+}
+
+.cart-buttons a.continue:hover {
+    background-color: #218838; /* Темніший зелений при наведенні */
+    transform: scale(1.05); /* Легке збільшення */
+}
